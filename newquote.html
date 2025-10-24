@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geico Expert - Insurance Agent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Apply Poppins font to the body */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Custom styles for icons to align and space them */
+        .icon {
+            display: inline-block; /* Make icons inline with text */
+            vertical-align: middle; /* Vertically align icons with text */
+            margin-right: 8px; /* Add space between icon and text */
+        }
+         /* Style for clickable phone number */
+        .phone-link {
+            display: inline-flex; /* Use flex to align icon and text */
+            align-items: center; /* Vertically center items */
+            font-weight: bold;
+            color: inherit; /* Inherit color from parent */
+            text-decoration: none; /* Remove underline */
+            transition: opacity 0.3s ease, transform 0.2s ease; /* Added transform for subtle hover effect */
+        }
+        .phone-link:hover {
+            opacity: 0.9;
+            transform: translateY(-2px); /* Lift slightly on hover */
+        }
+
+         /* Keyframes for a subtle pulsing animation */
+        @keyframes pulse-call {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+
+        /* Apply pulsing animation to the main phone number link */
+        .phone-link.pulse {
+            animation: pulse-call 2s infinite;
+            display: inline-block; /* Ensure it's treated as a block for animation */
+            padding: 5px; /* Add padding for the pulse effect */
+            border-radius: 9999px; /* Make it rounded */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <div class="bg-blue-900 text-white text-center py-3 text-lg font-bold">
+        Geico Expert
+    </div>
+
+    <header class="bg-white shadow-md py-16 md:py-24 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">Your Trusted Partner for Insurance</h1>
+            <p class="text-xl md:text-2xl text-gray-700 mb-10">Get the coverage you need to protect your future.</p>
+
+            <div class="mb-12">
+                <p class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Call for a Free, Personalized Quote:</p>
+                 <a href="tel:(888) 200-2157	" class="phone-link pulse text-black text-3xl md:text-4xl bg-yellow-400 hover:bg-yellow-500 px-8 py-4 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
+                     <i data-lucide="phone-call" class="icon w-8 h-8 md:w-10 md:h-10"></i>
+                    (888) 200-2157	
+                </a>
+            </div>
+
+            <p class="text-md text-gray-600 italic">"Excellent service and found me the perfect policy!" - Satisfied Client</p>
+        </div>
+    </header>
+
+    <section class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-10">Why Choose Geico Expert?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="p-6">
+                     <i data-lucide="award" class="icon text-yellow-400 w-12 h-12 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Expert Guidance</h3>
+                    <p class="text-gray-200">Navigate complex options with a knowledgeable professional.</p>
+                </div>
+                <div class="p-6">
+                     <i data-lucide="handshake" class="icon text-yellow-400 w-12 h-12 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Personalized Solutions</h3>
+                    <p class="text-gray-200">Find coverage tailored specifically to your unique needs.</p>
+                </div>
+                <div class="p-6">
+                     <i data-lucide="shield-check" class="icon text-yellow-400 w-12 h-12 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Reliable Support</h3>
+                    <p class="text-gray-200">Get ongoing assistance whenever you need it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">We Offer Coverage For:</h2>
+            <div class="flex flex-wrap justify-center gap-6 text-lg text-gray-700">
+                <span class="bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                    <i data-lucide="car" class="icon text-blue-600 w-6 h-6"></i> Auto
+                </span>
+                 <span class="bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                    <i data-lucide="home" class="icon text-cyan-600 w-6 h-6"></i> Home
+                </span>
+                 <span class="bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                    <i data-lucide="heart" class="icon text-red-500 w-6 h-6"></i> Life
+                </span>
+                 <span class="bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                    <i data-lucide="briefcase" class="icon text-purple-600 w-6 h-6"></i> Business
+                </span>
+                 <span class="bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                    <i data-lucide="building" class="icon text-green-600 w-6 h-6"></i> Property
+                </span>
+                 </div>
+        </div>
+    </section>
+
+
+    <section class="py-20 bg-gradient-to-r from-blue-800 to-blue-900 text-white text-center">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold mb-8">Ready to Get Started?</h2>
+            <p class="text-xl md:text-2xl mb-10 opacity-90">Don't wait, call today to discuss your insurance needs.</p>
+             <a href="tel:(888) 200-2157	" class="phone-link pulse text-black text-3xl md:text-4xl bg-yellow-400 hover:bg-yellow-500 px-8 py-4 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
+                 <i data-lucide="phone-call" class="icon w-8 h-8 md:w-10 md:h-10"></i>
+                (888) 200-2157	
+            </a>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-900 text-gray-300 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Geico Expert. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="tel:(888) 200-2157	" class="phone-link text-gray-300 hover:text-white">(888) 200-2157	</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons(); // This function scans the page and replaces data-lucide attributes with SVG icons
+    </script>
+
+</body>
+</html>
+
